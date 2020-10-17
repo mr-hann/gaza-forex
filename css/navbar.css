@@ -1,0 +1,42 @@
+/*general navbar*/
+.navbar{
+    background-color: #005859;
+    color:white;
+}
+.dash{
+    display: inline-block;
+    position: relative;
+  }
+  
+
+.dash:hover:before{
+    content: '';
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-shadow: inset 0 -20px 0 #ED4C1E;
+  }
+  .activen{
+   background-color: #ED4C1E;
+   color: white;
+
+  }
+
+.action{
+    background-color: rgb(235, 62, 14);
+    color: white;
+  }
+
+  
+/*sign up and login button*/
+.sign-up,.login{
+    color:white;
+}
+.sign-up:hover,
+.login:hover
+{
+    background-color: #ED4C1E;
+    color: white;
+}

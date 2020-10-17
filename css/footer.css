@@ -1,0 +1,44 @@
+
+footer{
+    background-color: #005859;
+}
+.footer-nav{
+    border-bottom:1px solid #071919;
+}
+.bacground-red-img{
+  background-image: url("../img/Rectangle background.png");
+  background-size: cover;
+}
+
+.sub{
+    background-color: #ED4C1E;
+    color: white;
+}
+  /*footer */
+  .background-white{
+    background-color: white;
+  }
+  .help-text,a{
+    color: #005859;
+
+  }
+
+  .footer-header_contact,svg{
+    color: #FFAB00;
+  }
+  .footer-header_contact{
+    border-bottom:  0.5px solid #071919; 
+    font-family: Droid Serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+
+  }
+  .border-right-dark{
+    border-right:1px solid #071919;
+  }
+  .border-bottom-dark{
+    border-bottom:1px solid #071919;
+  }
