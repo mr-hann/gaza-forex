@@ -19,7 +19,7 @@
   <body>
 
 <!--navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark position-fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         
           <a class="navbar-brand px-3" href="index.html"><img src="img/logo.png" alt="logo" height="60px" width="80px"></a>
 
@@ -53,11 +53,11 @@
             </div>
 </nav>
     
-  <main>
+  <main class="my-t4-9">
     <!--side nav-->
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-2 col-md-4 bg-primary-main full-hight border border-white-top position-fixed" >            
+          <div class="col-lg-2 col-md-3 bg-primary-main full-hight border border-white-top position-fixed sm-hidden" >            
                 <ul class="nav flex-column my-4">
                   <li class="nav-item my-2">
                     <a class="nav-link nav-dark" href="#"><i class="fa fa-home px-2"></i>Go to Homepage</a>
@@ -79,7 +79,7 @@
                   </li>
 
                   <li class="nav-item my-2">
-                      <a class="nav-link nav-dark" href="#"><i class="fa fa-bell px-2"></i>Notification</a>
+                      <a class="nav-link nav-dark" href="#"><i class="fa fa-bell px-2"></i>Notification <span class="badge badge-orange">4</span></a>
                   </li>
                 </ul>
           </div>
@@ -87,54 +87,162 @@
       </div>
 
 <div class="container-flied">
-  <div class="row justify-content-end mr-1">
-      <div class="col-lg-10 col-md-8">
+  <div class="row justify-content-md-end mr-10 mx-0 px-0">
+      <div class="col-lg-10 px-0">
           <div class="container-fluid bg-primary-sub">
-            <div class="row text-center">
-                <div class="col-lg-4 col-md-12 my-3">
+            <div class="row p-3">
+                <div class="col-lg-4 col-md-12">
                     <div class="card text-center">
                         <div class="card-body">
                           <p class="card-title text-dark">Account Balance</p>
                           <h1 class="card-text text-orange">$0.00</h1>
-                          <p class="card-subtitle text-primary">Account Balance</p>
+                          <p class="card-subtitle text-primary-main">Account Balance</p>
                          
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8">
-                  <p>Total number of referrals =<span>0</span></p>
+                <div class="col-lg-8 px-0 mx-0">
+                  <p class="my-2">Total number of referrals = <span>0</span></p>
                   <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="card text-center">
+                        <div class="col-md-6  my-2">
+                            <div class="card text-center bg-primary-main">
                                 <div class="card-body">
-                                  <p class="card-title text-dark">Paid Referrals</p>
-                                  <h3 class="card-text text-orange">$0.00</h3>
+                                  <p class="card-title text-color-white">Paid Referrals</p>
+                                  <h3 class="card-text text-warning">0</h3>
                                 </div>
                             </div>
                           </div>
             
-                          <div class="col-md-6">
-                              <div class="card text-center">
+                          <div class="col-md-6 my-2">
+                              <div class="card text-center bg-primary-main">
                                   <div class="card-body">
-                                    <p class="card-title text-dark">Unpaid Referrals</p>
-                                    <h3 class="card-text text-orange">$0.00</h3>
+                                    <p class="card-title text-color-white">Unpaid Referrals</p>
+                                    <h3 class="card-text text-warning">0</h3>
                                   </div>
                               </div>
                           </div>
-                  </div>
-                </div>
-                <p class="text-center">Click <a class="text-orange" href="#">here</a> to generate your unique referral link</p>
+                      </div>
+                   </div>
+                <p class="my-3">Click <a class="text-orange" href="#">here</a> to generate your unique referral link</p>
             </div>
+            
           </div>
-          
-          
+        
+            </div>
+            <div class="bg-primary-main text-center mx-0 p-3">
+              <i class="fa fa-download mx-2"></i>
+              <a href="#" class="text-white py-3">Click here</a> to download your <b>Marketing Materials</b>
+            </div>
 
-            <div class="bg-primary-main text-center">
-              <i class="fa fa-downlaod mx-2"></i>
-              <a href="#">Click here</a> to download your <b>Marketing Materials</b>
+
+<!--mid nav -->
+            <ul class="nav bg-white m-3">
+              <li class="nav-item mx-2">
+                <a class="nav-link hover-primary rounded active-primary" href="#">All Courses</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link hover-primary rounded" href="#">Paid Courses</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link hover-primary rounded" href="#">Free Courses</a>
+              </li>
+            </ul>
+<!--courses-->
+            <div class="rounded border m-4 p-3 shadow-sm">
+              <div class="row">
+                  <div class="col-lg-8 col-md-6 p-2">
+                      <h2 class="text-danger">Basic course</h2>
+                  </div>
+                    <div class="col-lg-2 col-md-3"></div>
+                    <div class="col-lg-2 col-md-3 py-3">
+                        <span class="rounded-pill border border-warning py-1 px-4 text-warning ws-2">Free</span>
+                    </div>
+              </div>
+               
+              <p>Professional Day Traders start here; whether your goal is to fire your boss, spend more time with your family, or start earning the income you’ve been dreaming about, there’s no better time to get started than now…
+              </p>
+              <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <span class="text-primary-main">learn more <i class="fa fa-chevron-down"></i></span>
+                </div>
+                  <div class="col-lg-8 col-md-6">
+
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-sm-6">
+                      <button class="btn btn-danger rounded-pill ">Enroll Now <i class="fa fa-arrow-right"></i></button>
+                  </div>
+                 
+              </div>
+              
+
             </div>
-            </div>
+<!--ends here-->
+
+<!--courses-->
+<div class="rounded border m-4 p-3 shadow-sm">
+    <div class="row">
+        <div class="col-lg-8 col-md-6 p-2">
+            <h2 class="text-primary-main">Analytical Course</h2>
+        </div>
+          <div class="col-lg-2 col-md-3"></div>
+          <div class="col-lg-2 col-md-3 py-3">
+              <span class="rounded-pill border border-warning py-1 px-4 text-warning ws-2">Free</span>
+          </div>
+    </div>
+     
+    <p>The Analytical course builds on the foundation of the beginner’s course, and adds vital information you will need to further your trading education. Understand the most profitable markets to trade, the tools you’ll...
+    </p>
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-xs-4">
+          <span class="text-primary-main">learn more <i class="fa fa-chevron-down"></i></span>
+      </div>
+        <div class="col-lg-8 col-md-6 col-xs-4">
+ 
+        </div>
+        <div class="col-lg-2 col-md-3 col-xs-4">
+            <button class="btn rounded-pill bg-primary-main text-color-white">Enroll Now <i class="fa fa-arrow-right"></i></button>
+        </div>
+       
+    </div>
+    
+
+  </div>
+<!--ends here-->
+
+<!--courses-->
+<div class="rounded border m-4 p-3 shadow-sm">
+    <div class="row">
+        <div class="col-lg-8 col-md-6 p-2">
+            <h2 class="text-warning">Advanced Course</h2>
+        </div>
+          <div class="col-lg-2 col-md-3"></div>
+          <div class="col-lg-2 col-md-3 py-3">
+              <span class="rounded-pill border border-warning py-1 px-4 text-warning ws-2">Free</span>
+          </div>
+    </div>
+     
+    <p>The Advanced course builds on the solid foundation from the Beginner & Intermediate courses and includes:	•	Unlimited Live Trade Room Access	•	Live Trade Calls •	Proprietary Technical Indicators
+        •	Charts...
+    </p>
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-xs-4">
+          <span class="text-primary-main">learn more <i class="fa fa-chevron-down"></i></span>
+      </div>
+        <div class="col-lg-8 col-md-6 col-sm-4 col-xs-4">
+
+        </div>
+        <div class="col-lg-2 col-md-3 col-xs-4">
+            <button class="btn rounded-pill bg-warning text-color-white">Enroll Now <i class="fa fa-arrow-right"></i></button>
+        </div>
+       
+    </div>
+    
+
+  </div>
+<!--ends here-->
+
+
           </div>
         </div>
   </div>

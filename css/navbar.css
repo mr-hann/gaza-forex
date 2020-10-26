@@ -24,15 +24,12 @@
 
   }
 
-.action{
-    background-color: rgb(235, 62, 14);
-    color: white;
-  }
+
 
   
 /*sign up and login button*/
 .sign-up,.login{
-    color:white;
+    color: white;  
 }
 .sign-up:hover,
 .login:hover

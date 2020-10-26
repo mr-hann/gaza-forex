@@ -9,19 +9,33 @@ a{
     background:url("../img/bg1.png"), rgba(0, 88, 89, 0.3);
     background-size: cover;
   }
-.padding{
-  padding: 12px;
+
+
+
+
+
+
+/*utility */
+
+
+
+
+
+.text-color-yellow{
+  color:rgba(170, 170, 1, 0.555);
 }
-.field-icon {
-  float: right;
-  margin-left: -29px;
-  margin-top: -29px;
-  position: relative;
-  z-index: 2;
+.bg-yellow{
+  background-color:rgb(175, 175, 2);
 }
 .text-color-primary{
   color:#015252;
   font-family: 'Noto Serif', serif;
+}
+.text-primary-main{
+  color:#015252;
+}
+.text-color-white{
+  color:white;
 }
 .m-right-5{
   margin-right: 180px;
@@ -30,12 +44,60 @@ a{
     background-color: #005859;
     color:white;
 }
+.mx-left-0{
+  margin-left: 0;
+}
 .bg-primary-sub{
   background-color: #005959c4;
   color:white;
 }
+.my-t5{
+  margin-top:5rem;
+}
+.text-header-sub{
+  font-family: Work Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+.py-b10{
+  padding-bottom:10rem;
+}
+.cash{
+  font-family: Droid Serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: center;
+  
+}
+.mx-l2{
+  margin-right:30px; 
+}
+.my-t4{
+  margin-top:4rem;
+}
+.my-t10{
+  margin-top:8rem;
+}
 .mr-1{
   margin-right: 1rem;
+}
+.mr-10{
+  margin-right: 10px;
+}
+.mx-0{
+  margin-left: 0;
+  margin-right: 0;
+}
+.px-0{
+  padding-left: 0;
+  padding-right: 0;
 }
 .text-dark{
   color:black;
@@ -44,15 +106,120 @@ a{
  color: #ED4C1E;
  
 }
+
+.bg-orange{
+ background-color: #ED4C1E;
+ color: white;
+  
+ }
 .full-hight{
   height: 100vh;
   margin: 0;
   padding: 0;
 }
+
+
+
+
+
+
+/*side nav*/
+
+
+
+.sub-nav{
+  color: rgba(255, 255, 255, 0.493);
+}
+.sub-nav:hover{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.active-side-nav{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.side-sub{
+ padding-left: 2rem;
+}
+.side-sub .nav-item{
+  text-decoration: none;
+  padding: 5px;
+}
+.padding{
+  padding: 10px 4px;
+}
+
+
+
+/*side nav*/
+
+
+
+
+
+
+
+/*utility ends here*/
+
+
+
+
+
+.float-right{
+  float: right;
+}
+.clearfix::after{
+  contain: "";
+  display: block;
+  clear:both;
+}
+.button-free{
+  height: 31px;
+  width: 100px;
+
+}
+.header{
+  font-family: Work Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+.social-header{
+  font-family: Work Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+.field-icon {
+  float: right;
+  margin-left: -29px;
+  margin-top: -29px;
+  position: relative;
+  z-index: 2;
+}
+.w-8{
+  width: 80%;
+}
+.mx-l4{
+  margin-left:4rem;
+}
 .nav-dark{
   color: rgb(175, 170, 170);
 }
 .nav-dark:hover{
+  color:white;
+  background: rgba(255, 255, 255, 0.068);
+}
+.active-sideNav{
   color:white;
   background: rgba(255, 255, 255, 0.068);
 }
@@ -62,47 +229,232 @@ a{
   right: 10px;
   z-index: 1;
 }
+.bg-light-primary{
+  background-color: #005859 5%;
+  
+}
 
+
+/*radio button styles*/
+
+
+/* The container */
+.container-radio{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: orange;
+  
+}
+
+/* On mouse-over, add a grey background color */
+.container-radio:hover input ~ .checkmark {
+  background-color: white;
+  border:1px solid black;
+}
+
+/* When the radio button is checked, add a blue background */
+.container-radio input:checked ~ .checkmark {
+  background-color: orange;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container-radio .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	background:white;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+/*radio style ends here*/
+
+
+
+/*nav in the dashbord */
+.hover-primary:hover{
+  background-color: #005959c4;
+  color:white; 
+}
+.active-primary{
+  background-color: #005959;
+  color:white; 
+}
+.badge-orange{
+  background-color: orange;
+  color: white;
+}
 /*scroll to the top button*/
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  left: 30px;
+  bottom: 10px;
+  left: 10px;
   z-index: 99;
   color: white;
   cursor: pointer;
 }
+.gaza-int{
+  font-family: Work Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+.bg-ash-main{
+  background:rgba(0, 88, 89, 0.03);
+}
+.bg-ash{
+  background:rgba(0, 88, 89, 0.03);
+  font-family: Work Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;  
+}
+.h-a{
+  height: 50%;
+}
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
+  body{
+    font-size: 115%;
+  }
+  
 .footer-nav{
   display:none;
 }
-
+.sm-hidden{
+  display: none;
+}
+.text-center-sm{
+  text-align: center;
+}
+.my-t4-9{
+  margin-top:4.1em;
+}
  }
 
+
+ /*dash bord styles*/
+ .db-profile-header{
+  font-family: Droid Serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+ }
+ .profile-name{
+  font-family: Droid Serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+ }
+ /*end*/
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
+  body{
+    font-size: 120%;
+  }
   .footer-nav{
     display:none;
   }
- 
+ .border-right{
+   border:none;
+ }
+ .sm-hidden{
+  display: none;
+}
+.text-center-sm{
+  text-align: center;
+}
+.my-t4-9{
+  margin-top:4.1em;
+}
   }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
+  body{
+    font-size: 120%;
+  }
   .footer-nav{
     display:none;
+  }
+  .border-right{
+    border:none;
+  }
+  .my-t4-9{
+    margin-top:4.1em;
   }
   
  }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  
+  .my-t4-9{
+    margin-top:4.999999rem;
+  }
  }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
+  .my-t4-9{
+    margin-top:89px;
+  }
  }
