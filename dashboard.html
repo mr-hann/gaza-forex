@@ -22,75 +22,133 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         
           <a class="navbar-brand px-3" href="index.html"><img src="img/logo.png" alt="logo" height="60px" width="80px"></a>
-
+    
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="mx-3 collapse navbar-collapse justify-content-md-center" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="mx-3 nav-item">
-                  <a class="nav-link dash" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link dash" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="mx-3 nav-item">
-                    <a class="nav-link dash" href="#">About us</a>
+                    <a class="nav-link dash" href="about-us.html">About us</a>
                   </li>
                   <li class="mx-3 nav-item">
-                    <a class="nav-link dash" href="#">Affiliates</a>  
+                      <a class="nav-link dash" href="contact-us.html">Contact Us</a>   
                   </li>
                   <li class="mx-3 nav-item">
-                      <a class="nav-link dash" href="#">Brokers</a>
+                      <a class="nav-link dash" href="dashboard.html">dashboard</a>   
                   </li>
-                  <li class="mx-3 nav-item">
-                      <a class="nav-link dash" href="#">Contact Us</a>   
-                  </li>
-                  <li class="mx-3 nav-item">
-                      <a class="nav-link dash" href="#">dashboard</a>   
-                  </li>
+<!--visible in sm screen only-->
+                  <li class="nav-item my-2 lg-hidden">
+                        
+                         <a class="nav-link dash toggle-side-2  clearfix" href="#"> 
+                           <span class="mx-2">My Wallet</span>
+                           <i class="fa fa-caret-right toggle-side-nav float-right" aria-hidden="true"></i>
+                         </a>
+   
+                         <!--sub nav-1-->
+                         <ul class="nav px-2 d-none toggle-ul mx-4">
+                             <li class="nav-item">
+                                 <a href="my-wallet.html" class="sub-nav">Account Balance</a>
+                            </li>
+                             <li class="nav-item">
+                                 <a href="withdrawal.html" class="sub-nav ">Withdraw Funds</a>
+                            </li>
+                         </ul>
+                     </li>
+                     <!--end of sub-nav-->
+   
+                     <li class="nav-item my-2 lg-hidden dropdown">
+                         <a class="nav-link dash side-sub-nav dropdown-toggle" data-toggle="dropdown" href="#">
+                           <span class="mx-1">Profile Settings</span>
+                           <span class="caret"></span></a>
+                         </a>
+   
+   
+                       <!--sub nav 2-->
+                       <ul class="nav side-sub mx-2 dropdown-menu">
+                           <li class="nav-item">
+                               <a href="my-profile.html" class="sub-nav">My Profile</a>
+                            </li>
+                           <li class="nav-item">
+                               <a href="change-password.html" class="sub-nav">Change Password</a>
+                            </li>
+                           <li class="nav-item">
+                               <a href="mycourse.html" class="sub-nav">My Courses</a>
+                            </li>
+                       </ul>
+                       <!--end of sub nav2-->
+   
+                     </li>
+                     <li class="nav-item my-2 lg-hidden">
+                         <a class="nav-link dash" href="referrals-program.html">Referrals</a>
+                     </li>
+<!--visible in sm screen end-->
+
                   <li class="mx-3 nav-item">
                       <a class="nav-link dash" href="#">logout</a>   
                   </li>
               </ul>     
             </div>
-</nav>
+    </nav>
+    <!--end nav-bar -->
     
-  <main class="my-t4-9">
+    <main class="my-t4-9">
+    
     <!--side nav-->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-2 col-md-3 bg-primary-main full-hight border border-white-top position-fixed sm-hidden" >            
-                <ul class="nav flex-column my-4">
-                  <li class="nav-item my-2">
-                    <a class="nav-link nav-dark" href="#"><i class="fa fa-home px-2"></i>Go to Homepage</a>
-                  </li>
-
-                  <li class="nav-item my-2">
-                      <a class="nav-link nav-dark" href="#"><i class="fa fa-cash px-2"></i>My Wallet</a>
-                  </li>
-
-                  <li class="nav-item my-2">
-                      <a class="nav-link nav-dark" href="#"><i class="fa fa-user-circle px-2"></i>Profile Settings</a>
-                  </li>
-                  <li class="nav-item my-2">
-                      <a class="nav-link nav-dark" href="#"><i class="fa fa-group px-2"></i> Referrals</a>
-                  </li>
-
-                  <li class="nav-item my-2">
-                      <a class="nav-link nav-dark" href="#"><i class="fa fa-download px-2"></i>Download</a>
-                  </li>
-
-                  <li class="nav-item my-2">
-                      <a class="nav-link nav-dark" href="#"><i class="fa fa-bell px-2"></i>Notification <span class="badge badge-orange">4</span></a>
-                  </li>
-                </ul>
+    <div class="container-fluid sm-hidden md-hidden">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 bg-primary-main full-hight border border-white-top position-fixed " >            
+                    <ul class="nav flex-column my-4">
+                      <li class="nav-item my-2">
+                         
+                          <a class="nav-link nav-dark toggle-side-2  clearfix" href="#"> 
+                            <img src="img/wallet.png" width="18px" height="18px" alt="wallet image">
+                            <span class="mx-2">My Wallet</span>
+                              <i class="fa fa-caret-right  change float-right" aria-hidden="true"></i>
+                          </a>
+    
+                          <!--sub nav-1-->
+                          <ul class="nav px-2 d-none toggle-ul mx-4">
+                              <li class="nav-item"><a href="my-wallet.html" class="sub-nav">Account Balance</a></li>
+                              <li class="nav-item"><a href="withdrawal.html" class="sub-nav ">Withdraw Funds</a></li>
+                          </ul>
+                      </li>
+                      <!--end of sub-nav-->
+    
+                      <li class="nav-item my-2">
+                          <a class="nav-link nav-dark side-sub-nav clearfix" href="#">
+                            <i class="fa fa-user-circle"></i>
+                            <span class="mx-1">Profile Settings</span>
+                            <i class="fa fa-caret-down toggle-side-nav float-right" aria-hidden="true"></i>
+                          </a>
+    
+    
+                        <!--sub nav 2-->
+                        <ul class="nav side-sub d-none mx-2">
+                            <li class="nav-item"><a href="my-profile.html" class="sub-nav active-side-nav">My Profile</a></li>
+                            <li class="nav-item"><a href="change-password.html" class="sub-nav">Change Password</a></li>
+                            <li class="nav-item"><a href="mycourse.html" class="sub-nav">My Courses</a></li>
+                        </ul>
+                        <!--end of sub nav2-->
+    
+                      </li>
+                      <li class="nav-item my-2">
+                          <a class="nav-link nav-dark" href="referrals.html"><i class="fa fa-group px-2"></i> Referrals</a>
+                      </li>
+                    </ul>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+    <!--end side-nav-->
 
 <div class="container-flied">
   <div class="row justify-content-md-end mr-10 mx-0 px-0">
       <div class="col-lg-10 px-0">
           <div class="container-fluid bg-primary-sub">
-            <div class="row p-3">
+            <div class="row py-4 my-2 px-2">
                 <div class="col-lg-4 col-md-12">
                     <div class="card text-center">
                         <div class="card-body">
@@ -137,18 +195,21 @@
 
 
 <!--mid nav -->
-            <ul class="nav bg-white m-3">
+            <ul class="nav nav-tabs bg-white m-3">
               <li class="nav-item mx-2">
-                <a class="nav-link hover-primary rounded active-primary" href="#">All Courses</a>
+                <a class="nav-link hover-primary rounded active-primary"  data-toggle="tab" href="all-course">All Courses</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link hover-primary rounded" href="#">Paid Courses</a>
+                <a class="nav-link hover-primary rounded" data-toggle="tab" href="paid">Paid Courses</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link hover-primary rounded" href="#">Free Courses</a>
+                <a class="nav-link hover-primary rounded" data-toggle="tab" href="free">Free Courses</a>
               </li>
             </ul>
-<!--courses-->
+
+
+    <div id="all-course">
+        <!--basic courses free-->
             <div class="rounded border m-4 p-3 shadow-sm">
               <div class="row">
                   <div class="col-lg-8 col-md-6 p-2">
@@ -187,7 +248,7 @@
         </div>
           <div class="col-lg-2 col-md-3"></div>
           <div class="col-lg-2 col-md-3 py-3">
-              <span class="rounded-pill border border-warning py-1 px-4 text-warning ws-2">Free</span>
+              <span class="rounded-pill border border-danger py-1 px-4 text-danger ws-2">PAID</span>
           </div>
     </div>
      
@@ -206,8 +267,8 @@
        
     </div>
     
-
   </div>
+
 <!--ends here-->
 
 <!--courses-->
@@ -218,8 +279,8 @@
         </div>
           <div class="col-lg-2 col-md-3"></div>
           <div class="col-lg-2 col-md-3 py-3">
-              <span class="rounded-pill border border-warning py-1 px-4 text-warning ws-2">Free</span>
-          </div>
+                <span class="rounded-pill border border-danger py-1 px-4 text-danger ws-2">PAID</span>
+            </div>
     </div>
      
     <p>The Advanced course builds on the solid foundation from the Beginner & Intermediate courses and includes:	•	Unlimited Live Trade Room Access	•	Live Trade Calls •	Proprietary Technical Indicators
@@ -239,7 +300,9 @@
     </div>
     
 
+    </div>
   </div>
+</div>
 <!--ends here-->
 
 

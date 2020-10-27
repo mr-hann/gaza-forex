@@ -11,10 +11,6 @@ a{
   }
 
 
-
-
-
-
 /*utility */
 
 
@@ -381,7 +377,7 @@ a{
 .my-t4-9{
   margin-top:4.1em;
 }
- }
+ 
 
 
  /*dash bord styles*/
@@ -405,6 +401,7 @@ a{
   text-align: left;
   
  }
+}
  /*end*/
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -426,6 +423,9 @@ a{
 .my-t4-9{
   margin-top:4.1em;
 }
+.sm-hidden{
+  display: none;
+}
   }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -442,6 +442,9 @@ a{
   .my-t4-9{
     margin-top:4.1em;
   }
+  .md-hidden{
+    display: none;
+  }
   
  }
 
@@ -450,11 +453,17 @@ a{
   .my-t4-9{
     margin-top:4.999999rem;
   }
+  .lg-hidden{
+    display: none;
+  }
  }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
   .my-t4-9{
     margin-top:89px;
+  }
+  .lg-hidden{
+    display: none;
   }
  }
