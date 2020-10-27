@@ -53,7 +53,8 @@
             </div>
 </nav>
     
- <!--navbar-->
+ 
+<!--navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         
           <a class="navbar-brand px-3" href="index.html"><img src="img/logo.png" alt="logo" height="60px" width="80px"></a>
@@ -73,8 +74,45 @@
                       <a class="nav-link dash" href="contact-us.html">Contact Us</a>   
                   </li>
                   <li class="mx-3 nav-item">
-                      <a class="nav-link dash" href="dashbord.html">dashboard</a>   
+                      <a class="nav-link dash" href="dashboard.html">dashboard</a>   
                   </li>
+<!--visible in sm screen only-->
+<li class="nav-item my-2 lg-hidden">
+        
+         <a class="nav-link dash toggle-side-2" href="#"> 
+           <span class="mx-2">My Wallet</span>
+             <i class="fa fa-caret-right  change" aria-hidden="true"></i>
+         </a>
+
+         <!--sub nav-1-->
+         <ul class="nav px-2 d-none toggle-ul mx-2">
+             <li class="nav-item"><a href="my-wallet.html" class="sub-nav dash">Account Balance</a></li>
+             <li class="nav-item"><a href="withdrawal.html" class="sub-nav dash">Withdraw Funds</a></li>
+         </ul>
+     </li>
+     <!--end of sub-nav-->
+
+     <li class="nav-item my-2 lg-hidden">
+         <a class="nav-link dash side-sub-nav" href="#">
+           <span class="mx-2">Profile Settings</span>
+           <i class="fa fa-caret-right toggle-side-nav" aria-hidden="true"></i>
+         </a>
+
+
+       <!--sub nav 2-->
+       <ul class="nav side-sub d-none mx-2">
+           <li class="nav-item"><a href="my-profile.html" class="sub-nav dash">My Profile</a></li>
+           <li class="nav-item"><a href="change-password.html" class="sub-nav dash">Change Password</a></li>
+           <li class="nav-item"><a href="mycourse.html" class="sub-nav dash">My Courses</a></li>
+       </ul>
+       <!--end of sub nav2-->
+
+     </li>
+     <li class="nav-item my-2 mx-2 lg-hidden">
+         <a class="nav-link dash" href="referrals-program.html">Referrals</a>
+     </li>
+<!--visible in sm screen end-->
+
                   <li class="mx-3 nav-item">
                       <a class="nav-link dash" href="#">logout</a>   
                   </li>

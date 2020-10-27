@@ -25,6 +25,9 @@ function topFunction() {
 }
 
 $(document).ready(function(){
+
+
+
 $(".side-sub-nav").click(function() {
   
       $(".toggle-side-nav").toggleClass("fa-caret-down fa-caret-right");
@@ -33,9 +36,12 @@ $(".side-sub-nav").click(function() {
   
     });
 
+
+
     $(".toggle-side-2").click(function(){
       $(".change").toggleClass("fa-caret-down fa-caret-right");
       $(".toggle-ul").toggleClass("d-block d-none");
     })
 
+ 
 });
