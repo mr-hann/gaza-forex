@@ -98,6 +98,43 @@ a{
 .text-dark{
   color:black;
 }
+.bg-light-white{
+  background: rgba(255, 255, 255, 0.1);
+}
+
+
+/*top left*/
+.top-left{
+  z-index: 1;
+  top:0;
+  left:12%;
+}
+/*top left*/
+
+.bg-img-ul-1{
+  list-style-image: url('../img/check-yellow.png');
+}
+.bg-img-ul-2{
+  list-style-image: url('../img/check-orange.png');
+}
+.bg-img-ul-3{
+  list-style-image: url('../img/check-green.png');
+}
+.bg-img-dark{
+  background-image: linear-gradient(to right bottom, rgba(5, 18, 18, 0.911), rgba(5, 18, 18, 0.911)), url("../img/subcribe-bg.png");
+  background-size: cover;
+  background-position: top;
+}
+.btn-right{
+  left:83%;
+  top:7px;
+}
+.my-4b{
+  margin-bottom: 4rem;
+}
+.bg-dark-main{
+  background-color:#051212; 
+}
 .text-orange{
  color: #ED4C1E;
  
@@ -114,7 +151,16 @@ a{
   padding: 0;
 }
 
-
+.large-text{
+  font-family: Neto Serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 116px;
+  letter-spacing: 0em;
+  text-align: center;
+  
+}
 
 
 
@@ -181,6 +227,16 @@ a{
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+.header-main{
+  font-family: Neto Serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 75px;
   letter-spacing: 0em;
   text-align: left;
   
@@ -348,9 +404,7 @@ a{
 .bg-ash{
   background:rgba(0, 88, 89, 0.03);
   font-family: Work Sans;
-  font-size: 24px;
   font-style: normal;
-  font-weight: 400;
   line-height: 36px;
   letter-spacing: 0em;
   text-align: left;  
@@ -378,6 +432,11 @@ a{
   margin-top:4.1em;
 }
  
+.top-left{
+  z-index: 1;
+  top:0;
+  left:4%;
+}
 
 
  /*dash bord styles*/
@@ -401,6 +460,10 @@ a{
   text-align: left;
   
  }
+ .btn-right{
+  left:47.3%;
+  top:7px;
+}
 }
  /*end*/
 /* Small devices (landscape phones, 576px and up)*/
@@ -426,6 +489,13 @@ a{
 .sm-hidden{
   display: none;
 }
+.btn-right{
+  left:85.5%;
+  top:7px;
+}
+.py-sm-t5{
+  padding-top: 10%;
+}
   }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -445,7 +515,13 @@ a{
   .md-hidden{
     display: none;
   }
-  
+  .btn-right{
+    left:74%;
+    top:7px;
+  }
+  .py-md-t5{
+    padding-top: 10rem;
+  }
  }
 
 /* Large devices (desktops, 992px and up)*/
@@ -456,6 +532,13 @@ a{
   .lg-hidden{
     display: none;
   }
+  .btn-right{
+    left:80.6%;
+    top:7px;
+  }
+  .img-663-lg{
+    height: 627.5px;
+  }
  }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -465,5 +548,8 @@ a{
   }
   .lg-hidden{
     display: none;
+  }
+  .img-663-lg{
+    height: 663.5px;
   }
  }

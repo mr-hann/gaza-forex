@@ -14,9 +14,10 @@
     <link href="css/navbar.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
 
-        <title>My Wallet</title>
+        <title>my wallet</title>
   </head>
   <body>
+
 
 <!--navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -38,8 +39,45 @@
                   <a class="nav-link dash" href="contact-us.html">Contact Us</a>   
               </li>
               <li class="mx-3 nav-item">
-                  <a class="nav-link dash" href="dashbord.html">dashboard</a>   
+                  <a class="nav-link dash" href="dashboard.html">dashboard</a>   
               </li>
+<!--visible in sm screen only-->
+<li class="nav-item my-2 lg-hidden md-hidden">
+    
+     <a class="nav-link dash toggle-side-2" href="#"> 
+       <span class="mx-2">My Wallet</span>
+         <i class="fa fa-caret-right  change" aria-hidden="true"></i>
+     </a>
+
+     <!--sub nav-1-->
+     <ul class="nav px-2 d-none toggle-ul mx-2">
+         <li class="nav-item"><a href="my-wallet.html" class="sub-nav dash">Account Balance</a></li>
+         <li class="nav-item"><a href="withdrawal.html" class="sub-nav dash">Withdraw Funds</a></li>
+     </ul>
+ </li>
+ <!--end of sub-nav-->
+
+ <li class="nav-item my-2 lg-hidden md-hidden">
+     <a class="nav-link dash side-sub-nav" href="#">
+       <span class="mx-2">Profile Settings</span>
+       <i class="fa fa-caret-right toggle-side-nav" aria-hidden="true"></i>
+     </a>
+
+
+   <!--sub nav 2-->
+   <ul class="nav side-sub d-none mx-2">
+       <li class="nav-item"><a href="my-profile.html" class="sub-nav dash">My Profile</a></li>
+       <li class="nav-item"><a href="change-password.html" class="sub-nav dash">Change Password</a></li>
+       <li class="nav-item"><a href="mycourse.html" class="sub-nav dash">My Courses</a></li>
+   </ul>
+   <!--end of sub nav2-->
+
+ </li>
+ <li class="nav-item my-2 mx-2 lg-hidden md-hidden">
+     <a class="nav-link dash" href="referrals-program.html">Referrals</a>
+ </li>
+<!--visible in sm screen end-->
+
               <li class="mx-3 nav-item">
                   <a class="nav-link dash" href="#">logout</a>   
               </li>
@@ -47,45 +85,38 @@
         </div>
 </nav>
 <!--end nav-bar -->
-
-<main class="my-t4-9">
-
-<!--side nav-->
-<div class="container-fluid">
+    
+  <main class="my-t4-9">
+    <!--side nav-->
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-2 col-md-3 bg-primary-main full-hight border border-white-top position-fixed sm-hidden" >            
+          <div class="col-lg-2 col-md-4 bg-primary-main full-hight border border-white-top position-fixed sm-hidden" >            
                 <ul class="nav flex-column my-4">
                   <li class="nav-item my-2">
                      
-                      <a class="nav-link nav-dark toggle-side-2 active-sideNav clearfix" href="#"> 
+                      <a class="nav-link nav-dark toggle-side-2 clearfix" href="#"> 
                         <img src="img/wallet.png" width="18px" height="18px" alt="wallet image">
                         <span class="mx-2">My Wallet</span>
-                          <i class="fa fa-caret-down  change float-right" aria-hidden="true"></i>
+                          <i class="fa fa-caret-right  change float-right" aria-hidden="true"></i>
                       </a>
-
-                      <!--sub nav-1-->
-                      <ul class="nav px-2 d-block toggle-ul mx-4">
-                          <li class="nav-item"><a href="my-wallet.html" class="sub-nav active-side-nav">Account Balance</a></li>
-                          <li class="nav-item"><a href="withdrawal.html" class="sub-nav">Withdraw Funds</a></li>
+                      
+                      <ul class="nav px-2 d-none toggle-ul mx-4">
+                          <li class="nav-item"><a href="#" class="sub-nav">Account Balance</a></li>
+                          <li class="nav-item"><a href="#" class="sub-nav">Withdraw Funds</a></li>
                       </ul>
                   </li>
-                  <!--end of sub-nav-->
 
                   <li class="nav-item my-2">
-                      <a class="nav-link nav-dark side-sub-nav clearfix" href="#">
+                      <a class="nav-link nav-dark side-sub-nav active-sideNav clearfix" href="#">
                         <i class="fa fa-user-circle"></i>
                         <span class="mx-1">Profile Settings</span>
-                        <i class="fa fa-caret-right toggle-side-nav float-right" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down toggle-side-nav float-right" aria-hidden="true"></i>
                       </a>
-
-
-                    <!--sub nav 2-->
-                    <ul class="nav side-sub d-none mx-2">
-                        <li class="nav-item"><a href="my-profile.html" class="sub-nav">My Profile</a></li>
-                        <li class="nav-item"><a href="change-password.html" class="sub-nav">Change Password</a></li>
-                        <li class="nav-item"><a href="mycourse.html" class="sub-nav">My Courses</a></li>
-                    </ul>
-                    <!--end of sub nav2-->
+                      <ul class="nav side-sub d-block mx-2">
+                          <li class="nav-item"><a href="my-profile.html" class="sub-nav">My Profile</a></li>
+                          <li class="nav-item"><a href="change-password.html" class="sub-nav">Change Password</a></li>
+                          <li class="nav-item"><a href="mycourse.html" class="sub-nav active-side-nav">My Courses</a></li>
+                      </ul>
 
                   </li>
                   <li class="nav-item my-2">
@@ -95,77 +126,152 @@
           </div>
         </div>
       </div>
-<!--end side-nav-->
+      <!--end of side nav-->
 
-<div class="container-fluid">
-  <div class="row justify-content-md-end mr-10 mx-0 px-0">
-      <!--div class="col-lg-10 col-md-9 px-0 bg-light-primary">
-        <div class="col-md-12 p-lg-4 p-md-1">
-         <h3>My Courses</h3>
-         <div class=" bg-white border border-danger text-center py-lg-2 px-lg-4 rounded shadow my-3 text-center">
-           <div class="clearfix">
-              <span class="my-5 mx-3 float-left">Account Balance</span>
-            
-              <span class="cash text-orange text-center">$0.00</span>
-           
-              <span class="bg-ash-main rounded-pill my-5 p-2 mx-3 float-right">Last updated 30mins ago</span>
+<div class="container-flied">
+  <div class="row justify-content-md-end justify-content-sm-center mr-10 mx-0 px-0">
+      <div class="col-lg-10 col-md-8 px-0 bg-light-primary">
+        
+        <div class="col-lg-12 col-md-12 p-lg-3 p-2">
+            <h3>My Account</h3>
+         <div class=" my-3 border border-warning shadow-sm clearfix p-lg-3 rounded text-center">
+            <span class="float-left my-5 py-3 mx-2 sm-hidden md-hidden">Account Balance</span>
+            <div class="lg-hidden">Account Balance</div>
+            <span class="text-center text-orange large-text">$0.00</span>
+            <span class="float-right bg-ash rounded-pill my-lg-5 p-2 mx-2 sm-hidden md-hidden">
+              <small>Last updated 30mins ago</small>
+            </span>
+            <div class="bg-ash text-center rounded-pill my-lg-5 p-2 mx-2 my-2 lg-hidden">
+                <small>Last updated 30mins ago</small>
             </div>
-        </div-->
-       
-
-                <div class="clearfix p-lg-3 text-center">
-                  <span class="text-center">Transaction History </span>  <i class="fa fa-download text-orange float-right px-lg-3"></i>
-                </div>          
-                <table class="table border-top border-bottom table-borderless">
-                    <thead>
-                      <tr class="py-2">
-                        <th scope="col" class="border-right">Personnel</th>
-                        <th scope="col">Initial Balance</th>
-                        <th scope="col">Transaction</th>
-                        <th scope="col">Current Balance</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th class="border-right">
-                            <i class="fa fa-user-circle text-primary-main"></i>
-                            <b>You</b>
-                            <p><small class="muted">2hrs ago</small></p>
-                        </th>
-                        <td>$0.00</td>
-                        <td class="text-orange">-2.000</td>
-                        <td>$0.00</td>
-                      </tr>
-                      <tr>
-                        <th class="border-right">
-                            <i class="fa fa-user-circle text-orange"></i>
-                            <b>Marvin McKinney</b>
-                            <p><small class="muted">11, Oct. 2020</small></p>
-                        </th>
-                        <td>$0.00</td>
-                        <td class="text-primary-main">+1.000</td>
-                        <td>$0.00</td>
-                      </tr>
-                      <tr>
-                        <th class="border-right">
-                            <i class="fa fa-user-circle text-dark"></i>
-                            <b>Wade Warren</b>
-                            <p><small class="mute">11, Oct. 2020</small></p>
-                        </th>
-                        <td>$0.00</td>
-                        <td class="text-primary-main">+1.000</td>
-                        <td>$0.00</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <div class="text-center my-3">
-                    <small class="muted">You have reached the end of your transaction history</small>
-                  </div>
-              
-
          </div>
+         
+        </div>
+
+<!--large screen table-->
+
+        <div class="col-lg-12 col-md-12 px-1 p-3  my-3 sm-hidden">
+          <div class="my-3 border shadow-sm clearfix p-3 rounded">
+            <div class="clearfix border-bottom text-center p-2">
+              <span class="text-primary-main">Transaction History</span><i class="fa fa-download float-right text-orange"></i>
+            </div>
+            <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col" class="border-right py-2">Personnel</th>
+                    <th scope="col" class="border-right py-2">Initial Balance</th>
+                    <th scope="col" class="border-right py-2">Transaction</th>
+                    <th scope="col" class="py-2">Current Balance</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="border-right">  
+                        <i class="fa fa-user-circle text-primary-main"></i>
+                        <b>You</b>
+                        <p><small class="muted">2hrs ago</small></p>     
+                    </th>
+                    <td class="border-right">$0.00</td>
+                    <td class="text-orange border-right">-2.000</td>
+                    <td>$0.00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="border-right">
+                        <i class="fa fa-user-circle text-orange"></i>
+                        <b>Marvin McKinney</b>
+                        <p><small class="muted">11, Oct. 2020</small></p>
+                    </th>
+                    <td class="border-right">$0.00</td>
+                    <td class="text-primary-main border-right">+1.000</td>
+                    <td>$0.00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="border-right">
+                        <i class="fa fa-user-circle text-dark"></i>
+                        <b>Wade Warren</b>
+                        <p><small class="mute">11, Oct. 2020</small></p>     
+                    </th>
+                    <td class="border-right">$0.00</td>
+                    <td class="text-primary-main border-right">+1.000</td>
+                    <td>$0.00</td>
+                  </tr>
+                </tbody>
+                
+              </table>
+              <div class="border-top text-center p-2">
+                <small class="disabled">You have reached the end of your transaction history</small>
+              </div>
+            </div>
+        </div>
+
+
+
+        <!--table for sm screen-->
+
+        
+        <div class="col-md-12   my-3 lg-hidden">
+            <div class="my-3 border shadow-sm clearfix p-lg-3 rounded">
+              <div class="clearfix border-bottom text-center p-lg-2 p-3">
+                <span class="text-primary-main">Transaction History</span><i class="fa fa-download float-right text-orange"></i>
+              </div>
+              <div href="#" class="p-1 border-bottom text-center" data-toggle="tooltip" title="swap-right">
+                <i class="fa fa-arrow-left text-orange"></i>
+                swap for more ditails
+                <i class="fa fa-arrow-right text-orange"></i>
+              </div>
+              <table class="table table-borderless table-responsive">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="border-right py-2">Personnel</th>
+                      <th scope="col" class="border-right py-2">Initial Balance</th>
+                      <th scope="col" class="border-right py-2">Transaction</th>
+                      <th scope="col" class="py-2">Current Balance</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="border-right">  
+                          <i class="fa fa-user-circle text-primary-main"></i>
+                          <b>You</b>
+                          <p><small class="muted">2hrs ago</small></p>     
+                      </th>
+                      <td class="border-right">$0.00</td>
+                      <td class="text-orange border-right">-2.000</td>
+                      <td>$0.00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="border-right">
+                          <i class="fa fa-user-circle text-orange"></i>
+                          <b>Marvin McKinney</b>
+                          <p><small class="muted">11, Oct. 2020</small></p>
+                      </th>
+                      <td class="border-right">$0.00</td>
+                      <td class="text-primary-main border-right">+1.000</td>
+                      <td>$0.00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="border-right">
+                          <i class="fa fa-user-circle text-dark"></i>
+                          <b>Wade Warren</b>
+                          <p><small class="mute">11, Oct. 2020</small></p>     
+                      </th>
+                      <td class="border-right">$0.00</td>
+                      <td class="text-primary-main border-right">+1.000</td>
+                      <td>$0.00</td>
+                    </tr>
+                  </tbody>
+                  
+                </table>
+                <div class="border-top text-center p-2">
+                  <small class="disabled">You have reached the end of your transaction history</small>
+                </div>
+              </div>
+          </div>
+
+
+
       </div>
-  </div>
+   </div>
 </div>
 <!--ends here-->
 
@@ -190,6 +296,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
     <script src="js/js.js"></script>
   </body>
 </html>
