@@ -42,6 +42,66 @@ $(".side-sub-nav").click(function() {
       $(".change").toggleClass("fa-caret-down fa-caret-right");
       $(".toggle-ul").toggleClass("d-block d-none");
     })
+  
+  //sub nav on the dashboard
+  
+  //all courses
+   $(".nav-all").click(function(){
+//add active
+    $(this).addClass("active-primary");
+  //remove hover
+    $(this).removeClass("hover-primary");
+//add hover for other nav elements
+    $(".nav-paid").addClass("hover-primary");
+    $(".nav-free").addClass("hover-primary");
+//remove active from other nav elements
+    $(".nav-paid").removeClass("active-primary");
+    $(".nav-free").removeClass("active-primary");
+// display paid courses
+    $(".paid-course").show();
+    $(".free-course").show();
 
+  });
+  //all courses ends here
+
+  //paid courses
+  $(".nav-paid").click(function(){
+    //add active
+    $(this).addClass("active-primary");
+    //remove active on other elements
+    $(".nav-all").removeClass("active-primary");
+    $(".nav-free").removeClass("active-primary");
+       
+    //add hover for other nav elements
+    $(".nav-all").addClass("hover-primary");
+    $(".nav-free").addClass("hover-primary");
+
+    //remove hover 
+    $(this).removeClass("hover-primary");
+    // show only paid courses
+    $(".paid-course").show();
+    $(".free-course").hide();
+
+  })
+  //end paid
  
+
+   //free courses
+   $(".nav-free").click(function(){
+    //add active
+        $(this).addClass("active-primary");
+      //remove hover
+        $(this).removeClass("hover-primary");
+    //add hover for other nav elements
+        $(".nav-paid").addClass("hover-primary");
+        $(".nav-all").addClass("hover-primary");
+    //remove active from other nav elements
+        $(".nav-paid").removeClass("active-primary");
+        $(".nav-all").removeClass("active-primary");
+    // display free courses and hide paid
+        $(".paid-course").hide();
+        $(".free-course").show();
+    
+      });
+      //free courses ends here
 });
